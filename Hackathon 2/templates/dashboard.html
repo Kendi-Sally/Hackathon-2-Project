@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>My Flashcards</h2>
+<div class="card-grid">
+  {% for c in cards %}
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front"><h4>{{ c.question }}</h4></div>
+        <div class="flip-back"><p>{{ c.answer }}</p></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+

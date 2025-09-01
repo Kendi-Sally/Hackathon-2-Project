@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="form">
+  <h2>Paste study notes</h2>
+  <form method="post" action="{{ url_for('generate') }}">
+    <textarea name="notes" rows="8" placeholder="Paste your notes here"></textarea>
+    <button class="btn" type="submit">Generate Flashcards</button>
+  </form>
+</div>
+<hr style="margin:20px 0">
+{% endblock %}
