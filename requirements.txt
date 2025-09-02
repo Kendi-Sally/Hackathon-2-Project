@@ -1,0 +1,13 @@
+flask==3.0.3
+flask-mysqldb==2.0.0
+flask-login==0.6.3
+flask-bcrypt==1.0.1
+flask-cors==4.0.0
+gunicorn==23.0.0
+
+openai==1.35.14
+requests==2.32.3
+python-dotenv==1.0.1
+
+
+
