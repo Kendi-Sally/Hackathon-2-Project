@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Go Premium</h2>
+<p>Upgrade to unlimited cards for KES {{ 500 }}.</p>
+<form method="post" action="{{ url_for('pay') }}">
+  <button class="btn" type="submit">Upgrade (Paystack / Demo)</button>
+</form>
+{% endblock %}
