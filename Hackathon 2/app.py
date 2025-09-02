@@ -5,6 +5,16 @@ from flask import (
     Flask, render_template, request, redirect, url_for,
     session, flash, jsonify
 )
+# app.py
+from flask import Flask
+
+# create a Flask instance
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello, Flask is working!"
+
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 import mysql.connector
